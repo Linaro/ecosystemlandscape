@@ -1,0 +1,29 @@
+universal_nav: true
+search:
+  enabled: true
+  label: Linaro
+expand_breakpoint: xl
+brand:
+  path: /assets/images/Linaro-Logo.svg
+  alt: Linaro logo
+pages:
+  - title: Projects
+    url: https://www.linaro.org/projects/
+  - title: Membership
+    url: https://www.linaro.org/membership/
+  - title: Services
+    url: https://www.linaro.org/services/
+  - title: Support
+    url: https://www.linaro.org/support/
+  - title: Downloads
+    url: https://www.linaro.org/downloads/
+  - title: About
+    options:
+      - text: About Us
+        url: https://www.linaro.org/about/
+      - text: Blogs
+        url: https://www.linaro.org/blog/
+      - text: Events
+        url: https://www.linaro.org/events/
+      - text: News
+        url: https://www.linaro.org/news/

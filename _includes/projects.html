@@ -1,0 +1,163 @@
+<section class="projects">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-2 text-center bg-purple text-white d-flex flex-column justify-content-center align-items-center">
+                <h4 class="">Big Data</h4>
+            </div>
+            <div class="col-12 col-sm-10">
+                <div class="row pt-0">
+                    {% for item in site.categories.bigdata reversed %}
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+                            <a href="{{ item.url }}">
+                                <div class="project_inner">
+                                    <h5 class="font-weight-bold bg-purple mb-0 text-white text-center">{{ item.project.title }}</h5>
+                                    <div class="img-wrapper">
+                                        <img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-2 text-center bg-green d-flex flex-column justify-content-center align-items-center">
+                <h4 class="">Database</h4>
+            </div>
+            <div class="col-12 col-sm-10">
+                <div class="row pt-0">
+                    {% for item in site.categories.database reversed %}
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+                            <a href="{{ item.url }}">
+                                <div class="project_inner">
+                                    <h5 class="font-weight-bold bg-green mb-0 text-dark text-center">{{ item.project.title }}</h5>
+                                    <div class="img-wrapper">
+                                        <img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-2 text-center bg-orange text-white d-flex flex-column justify-content-center align-items-center">
+                <h4 class="">Virtualization, Cloud, Cloud Native & Storage</h4>
+            </div>
+            <div class="col-12 col-sm-10">
+                <div class="row pt-0">
+                    {% for item in site.categories.cloud reversed %}
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+                            <a href="{{ item.url }}">
+                                <div class="project_inner">
+                                    <h5 class="font-weight-bold bg-orange mb-0 text-white text-center">{{ item.project.title }}</h5>
+                                    <div class="img-wrapper">
+                                        <img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-2 text-center bg-blue text-white d-flex flex-column justify-content-center align-items-center">
+                <h4 class="bgbrown">Web</h4>
+            </div>
+            <div class="col-12 col-sm-10">
+                <div class="row pt-0">
+                    {% for item in site.categories.web reversed %}
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+                            <a href="{{ item.url }}">
+                                <div class="project_inner">
+                                    <h5 class="font-weight-bold bg-blue mb-0 text-white text-center">{{ item.project.title }}</h5>
+                                    <div class="img-wrapper">
+                                        <img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-2 text-center bg-red text-white d-flex flex-column justify-content-center align-items-center">
+                <h4 class="bgbrown">Artificial Intelligence</h4>
+            </div>
+            <div class="col-12 col-sm-10">
+                <div class="row pt-0">
+                    {% for item in site.categories.ai reversed %}
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+                            <a href="{{ item.url }}">
+                                <div class="project_inner">
+                                    <h5 class="font-weight-bold bg-red mb-0 text-white text-center">{{ item.project.title }}</h5>
+                                    <div class="img-wrapper">
+                                        <img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-2 text-center bg-lightblue d-flex flex-column justify-content-center align-items-center">
+                <h4 class="bgbrown">Programming Language, Libraries & Toolchain</h4>
+            </div>
+            <div class="col-12 col-sm-10">
+                <div class="row pt-0">
+                    {% for item in site.categories.libraries reversed %}
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+                            <a href="{{ item.url }}">
+                                <div class="project_inner">
+                                    <h5 class="font-weight-bold bg-lightblue text-dark mb-0 text-center">{{ item.project.title }}</h5>
+                                    <div class="img-wrapper">
+                                        <img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-2 text-center bg-purple text-white d-flex flex-column justify-content-center align-items-center">
+                <h4 class="bgbrown">Applications & Middleware</h4>
+            </div>
+            <div class="col-12 col-sm-10">
+                <div class="row pt-0">
+                    {% for item in site.categories.middleware reversed %}
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+                            <a href="{{ item.url }}">
+                                <div class="project_inner">
+                                    <h5 class="font-weight-bold text-white bg-purple mb-0 text-center">{{ item.project.title }}</h5>
+                                    <div class="img-wrapper">
+                                        <img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

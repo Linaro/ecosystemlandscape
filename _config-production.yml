@@ -1,0 +1,14 @@
+# In order to build for staging run:
+# $ jekyll build --config _config.yml, _config-production.yml
+#
+#
+# URL of static site
+url: "https://ecosystemlandscape.linaro.org"
+# Destination folder
+destination: production.ecosystemlandscape.linaro.org
+# Production boolean used in layouts / includes
+production: true
+# Google Analytics
+google_analytics:
+  enabled: true
+  code: GTM-TKVP3S4

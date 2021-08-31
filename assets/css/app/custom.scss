@@ -1,0 +1,44 @@
+#wrapper {
+  .jumbotron {
+    h1 {
+      font-weight: 700 !important;
+    }
+    .header_background_image {
+      filter: brightness(0.6);
+    }
+  }
+  .bg-purple {
+    background-color: #990099;
+  }
+  .bg-green {
+    background-color: #99cc33;
+  }
+  .bg-orange {
+    background-color: #f48414;
+  }
+  .bg-blue {
+    background-color: #0083ad;
+  }
+  .bg-red {
+    background-color: #cc0033;
+  }
+  .bg-lightblue {
+    background-color: #0cb2dd;
+  }
+  .projects {
+    .project_inner {
+      h5 {
+        font-size: 14px;
+        padding: 5px;
+      }
+    }
+    .img-wrapper {
+      background-color: white;
+      img {
+        height: 100px;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
