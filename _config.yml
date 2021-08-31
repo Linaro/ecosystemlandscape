@@ -26,6 +26,7 @@ exclude:
   - .asset-cache
   - _static-site
   - .sass-cache
+  - ecosystemlandscape.linaro.org
   - production.ecosystemlandscape.linaro.org
 sass:
   style: compressed
