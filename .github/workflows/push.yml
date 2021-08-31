@@ -64,6 +64,7 @@ jobs:
       - name: Run Pa11y scan
         uses: benc-uk/workflow-dispatch@v1
         with:
+          ref: master
           workflow: CheckSite
           repo: linaro-its/pa11y-ci-container
           token: ${{ secrets.BUILD_REPO_TOKEN }}
