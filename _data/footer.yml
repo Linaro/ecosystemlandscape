@@ -7,7 +7,5 @@ footer_brand:
 social_media_icons: false
 # These links are displayed at the very bottom of the footer.
 company_links:
-  - name: FAQ
-    url: https://www.linaro.org/faq/
   - name: Contact
     url: https://www.linaro.org/contact/

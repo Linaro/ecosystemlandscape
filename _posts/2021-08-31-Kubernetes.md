@@ -29,8 +29,8 @@ supported_releases:
     version: "v1.21"
     url: "https://v1-21.docs.kubernetes.io/docs/home"
   - release:
-    version: "v1.22"
-    url: "https://v1-22.docs.kubernetes.io/docs/home"
+    version: "Latest"
+    url: "https://kubernetes.io/docs/home/"
 
 project_ci:
   - CI:

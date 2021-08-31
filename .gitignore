@@ -5,6 +5,6 @@ _site
 .jekyll-metadata
 assets/resized
 production.ecosystemlandscape.linaro.org
-staging.ecosystemlandscape.linaro.org
+ecosystemlandscape.linaro.org
 .asset_pipeline
 .jekyll-cache

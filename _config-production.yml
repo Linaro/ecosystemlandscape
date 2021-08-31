@@ -5,7 +5,7 @@
 # URL of static site
 url: "https://ecosystemlandscape.linaro.org"
 # Destination folder
-destination: production.ecosystemlandscape.linaro.org
+destination: ecosystemlandscape.linaro.org
 # Production boolean used in layouts / includes
 production: true
 # Google Analytics
