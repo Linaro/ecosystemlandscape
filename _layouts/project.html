@@ -78,7 +78,7 @@ layout: base
                             </div>
                             <ul class="list-group my-3 ci_list">
                                 {% for CI in page.project_ci %}
-                                <li class="list-group-item ci_items" style="text-decoration: none;">
+                                <li class="list-group-item ci_items d-flex align-items-center flex-row justify-content-between" style="text-decoration: none;">
                                     <div style="white-space: nowrap;">
                                         <a title="{{ CI.title }}" href="{{ CI.url }}" target="_blank" rel="nofollow" style="font-size: 1.5rem;">{{ CI.title }}</a>
                                     </div>
