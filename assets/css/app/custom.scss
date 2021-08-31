@@ -1,4 +1,26 @@
 #wrapper {
+  .overview_text {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .back_button {
+    width: auto;
+    text-align: left;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  .overview_img {
+    img {
+      height: 100px;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  .ci_status_img img {
+    width: 90px;
+    height: auto;
+  }
   .jumbotron {
     h1 {
       font-weight: 700 !important;
