@@ -1,8 +1,8 @@
-title: Ecosystem Landscape
+title: Arm Ecosystem Landscape
 url: https://ecosystemlandscape.linaro.org
 baseurl: ""
 description: |-
-  The Ecosystem Landscape site provides an index of open source projects for the Arm ecosystem.
+  The Arm Datacenter Ecosystem Landscape is created to provide a centralized information hub for Arm developers across the world.
 destination: _site
 permalink: /:categories/:title/
 theme: linaro-jekyll-theme
