@@ -1,8 +1,8 @@
-title: Arm Ecosystem Landscape
+title: Linaro Ecosystem Dashboard
 url: https://ecosystemlandscape.linaro.org
 baseurl: ""
 description: |-
-  The Arm Datacenter Ecosystem Landscape is created to provide a centralized information hub for Arm developers across the world.
+  The Linaro Ecosystem Dashboard has been created to provide a centralized information hub for Arm developers across the world.
 destination: _site
 permalink: /:categories/:title/
 theme: linaro-jekyll-theme
