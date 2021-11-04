@@ -1,5 +1,5 @@
 title: Linaro Ecosystem Dashboard
-url: https://ecosystemlandscape.linaro.org
+url: https://ecosystemdashboard.linaro.org
 baseurl: ""
 description: |-
   The Linaro Ecosystem Dashboard has been created to provide a centralized information hub for Arm developers across the world.
@@ -26,8 +26,8 @@ exclude:
   - .asset-cache
   - _static-site
   - .sass-cache
-  - ecosystemlandscape.linaro.org
-  - production.ecosystemlandscape.linaro.org
+  - ecosystemdashboard.linaro.org
+  - production.ecosystemdashboard.linaro.org
 sass:
   style: compressed
   load_paths:
