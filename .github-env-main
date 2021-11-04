@@ -1,6 +1,6 @@
-AWS_STATIC_SITE_PROFILE=ecosystemlandscape-linaro-org-buildbot
-AWS_STATIC_SITE_URL=ecosystemlandscape-linaro-org
-CF_DIST_ID_STATIC_LO=E2F3CLR8D8Q4YT
+AWS_STATIC_SITE_PROFILE=ecosystemdashboard-linaro-org-buildbot
+AWS_STATIC_SITE_URL=ecosystemdashboard-linaro-org
+CF_DIST_ID_STATIC_LO=E1GKM6H14G6NF1
 CLOUDFRONT_ADD_SECURITY_HEADERS_ARN=arn:aws:lambda:us-east-1:691071635361:function:cloudfront-add-security-headers:9
 JEKYLL_ENV=production
-SITE_URL=ecosystemlandscape.linaro.org
+SITE_URL=ecosystemdashboard.linaro.org
