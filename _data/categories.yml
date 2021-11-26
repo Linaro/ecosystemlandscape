@@ -12,3 +12,5 @@
   image: /assets/images/content/DataCenter.jpg
 - name: bigdata
   image: /assets/images/content/DataCenter.jpg
+- name: storage
+  image: /assets/images/content/DataCenter.jpg
