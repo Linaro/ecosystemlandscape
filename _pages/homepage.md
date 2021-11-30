@@ -7,6 +7,8 @@ permalink: /
 jumbotron:
   inner_class: text-center font-weight-bold
   title: Linaro Ecosystem Dashboard
+  description: >
+    for Arm systems
   image: /assets/images/content/DataCenter.jpg
 flow:
   - row: container_row
