@@ -29,7 +29,7 @@ work_items:
     status: "DONE"
   - work:
     title: "[STORM-3681] Enable basic Arm64 CI task"
-    url: "https://github.com/apache/storm/pull/3116"
+    url: "https://github.com/apache/storm/pull/3316"
     status: "DONE"
 
 
