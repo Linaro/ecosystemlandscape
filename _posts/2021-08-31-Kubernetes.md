@@ -18,7 +18,6 @@ project:
 supported_releases:
   - release:
     version: "v1.18"
-    url: "https://v1-18.docs.kubernetes.io/docs/home"
   - release:
     version: "v1.19"
     url: "https://v1-19.docs.kubernetes.io/docs/home"
