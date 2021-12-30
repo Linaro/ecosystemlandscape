@@ -17,8 +17,6 @@ project:
 
 supported_releases:
   - release:
-    version: "v1.18"
-  - release:
     version: "v1.19"
     url: "https://v1-19.docs.kubernetes.io/docs/home"
   - release:
@@ -27,6 +25,9 @@ supported_releases:
   - release:
     version: "v1.21"
     url: "https://v1-21.docs.kubernetes.io/docs/home"
+  - release:
+    version: "v1.22"
+    url: "https://v1-22.docs.kubernetes.io/docs/home"
   - release:
     version: "Latest"
     url: "https://kubernetes.io/docs/home/"
