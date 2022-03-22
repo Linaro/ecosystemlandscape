@@ -23,12 +23,6 @@ supported_releases:
     version: "2.4.8"
     url: "https://hbase.apache.org/downloads.html"
 
-project_ci:
-  - CI:
-    title: "HBase Upstream AArch64 CI"
-    status: "/assets/images/projects/common/CI_status.png"
-    url: "https://ci-hadoop.apache.org/view/HBase/job/HBase/job/HBase-Nightly-ARM/"
-
 ---
 
 <p>Apache HBase</p>
