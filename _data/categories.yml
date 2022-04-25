@@ -1,0 +1,16 @@
+- name: libraries
+  image: /assets/images/content/DataCenter.jpg
+- name: middleware
+  image: /assets/images/content/DataCenter.jpg
+- name: ai
+  image: /assets/images/content/AI.png
+- name: web
+  image: /assets/images/content/DataCenter.jpg
+- name: cloud
+  image: /assets/images/content/DataCenter.jpg
+- name: database
+  image: /assets/images/content/DataCenter.jpg
+- name: bigdata
+  image: /assets/images/content/DataCenter.jpg
+- name: storage
+  image: /assets/images/content/DataCenter.jpg

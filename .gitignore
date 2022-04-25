@@ -4,7 +4,7 @@ Gemfile.lock
 _site
 .jekyll-metadata
 assets/resized
-production.ecosystemlandscape.linaro.org
-staging.ecosystemlandscape.linaro.org
+production.ecosystemdashboard.linaro.org
+ecosystemdashboard.linaro.org
 .asset_pipeline
 .jekyll-cache

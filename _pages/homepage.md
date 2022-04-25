@@ -1,12 +1,14 @@
 ---
-title: Ecosystem Landscape - Linaro
+title: Linaro Ecosystem Dashboard
 description: >
-  The Ecosystem Landscape site provides an index of open source projects for the Arm ecosystem.
+  The Linaro Ecosystem Dashboard has been created to provide a centralized information hub for Arm developers across the world.
 layout: flow
 permalink: /
 jumbotron:
   inner_class: text-center font-weight-bold
-  title: Arm Ecosystem Landscape
+  title: Linaro Ecosystem Dashboard
+  description: >
+    for Arm systems
   image: /assets/images/content/DataCenter.jpg
 flow:
   - row: container_row
@@ -14,7 +16,7 @@ flow:
       - format: text
         text_content:
           text: |-
-            The Arm Datacenter Ecosystem Landscape is created to provide a centralized information hub for Arm developers across the world. 
+            The Linaro Ecosystem Dashboard has been created to provide a centralized information hub for Arm developers across the world.
 
             Click logos to check Arm support details for corresponding project and/or product.
       - format: custom_include

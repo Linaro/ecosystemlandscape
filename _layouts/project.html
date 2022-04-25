@@ -1,11 +1,20 @@
 ---
 layout: base
 ---
-<div class="jumbotron d-flex align-items-center jumbotron-fluid project_header">
-    <div class="container ">
+<div class="jumbotron d-flex align-items-center jumbotron-fluid project_header text-center background_image">
+    <a href="/" class="btn btn-primary back_button">Back to index</a>
+    {% assign image_path = "/assets/images/content/DataCenter.jpg" %}
+    {% assign project_category = page.categories[0] %}
+    {% for category in site.data.categories %} 
+        {% if category.name == project_category %}
+            {% assign image_path = category.image %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+    {% picture header_image {{image_path}} --alt {{alt_title}} %}
+    <div class="container">
         <div class="inner_content_wrapper d-flex flex-column">
-            <a href="/" class="btn btn-primary">Back to index</a>
-            <h1 class="mr-md-auto text-center text-md-left">{{page.title}}</h1>
+            <h1 class="mr-md-auto text-center text-md-left">{{page.project.title}}</h1>
             {% if page.icons %}
             <div class="header_icons mx-auto mx-md-0 my-2">
                 {% for icon in page.icons %}
@@ -24,111 +33,108 @@ layout: base
                     <div class="my-5">
                         <article>
                             <div class="project_section">OVERVIEW</div>
-                            <h1>
-                                <a href="{{ page.project.project_official_url }}" target="_blank" title="{{ page.project.title }}" rel="nofollow">{{ page.project.title }}</a>
-                            </h1>
+                            {% if page.project.project_official_url %}
+                            <a href="{{ page.project.project_official_url }}" target="_blank" title="{{ page.project.title }}" rel="nofollow">
+                                <h2>{{ page.project.title }}</h2>
+                            </a>
+                            {% endif %}
                             <div class="overview_container_out">
                                 <div class="overview_container_in">
-                                    <p style="font-size: 1.5rem;font-weight: 600;">{{ page.project.overview }}</p>
+                                    <p class="overview_text">{{ page.project.overview }}</p>
                                 </div>
-                                <div class="overview_img">
+                                <div class=" ">
                                     <img src="{{ page.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
                                 </div>
                             </div>
-                            <div style="display: flex; flex-direction: row; align-items: center;">
-                                <div>
-                                    <p style="margin-left: 4rem; font-size: 16px; font-weight: 400;"> {{ page.project.title }} offcial site: </p>
-                                </div>
-                                <h7>
-                                    <a href="{{ page.project.project_official_url }}" target="_blank" title="{{ page.project.title }}" rel="nofollow">{{ page.project.project_official_url }}</a>
-                                </h7>
-                            </div>
-                            <hr class="project_section_line">
-                            <div class="project_section">DETAILS</div>
-                            {% if page.supported_releases %}
-                            <div class="project_detail_title">
-                                <h5>AArch64 Supported Releases</h5>
-                            </div>
-                            <div style="padding-left: 2rem; background: #d6d6d650; margin-left: 2rem; margin-right: 2rem;">
-                                <ul class="release_list">
-                                    {% for release in page.supported_releases %}
-                                    <li class="version_list">
-                                        <a title="{{ release.version }}" href="{{ release.url }}" target="_blank" rel="nofollow">{{ release.version }}</a>
-                                    </li>
-                                    {% endfor %}
-                                </ul>
+                            {% if page.project.project_official_url %}
+                            <div>
+                                <p>
+                                    {{ page.project.title }} offcial site: <a href="{{ page.project.project_official_url }}" target="_blank" title="{{ page.project.title }}" rel="nofollow">{{ page.project.project_official_url }}</a>
+                                </p>
                             </div>
                             {% endif %}
+                            {% if page.supported_releases or page.project_ci or page.user_stories or page.work_items or page.events %}
+                                <hr class="project_section_line">
+                                <div class="project_section">
+                                    <h3 class="font-weight-bold">DETAILS</h3>
+                                </div>
+                            {% endif %}
+                            {% if page.supported_releases %}
                             <div class="project_detail_title">
-                                <h5>Project AArch64 CI Status</h5>
+                                <h5 class="font-weight-bold">AArch64 Supported Releases</h5>
                             </div>
-                            <div style="padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 2rem; background: #d6d6d650; margin-left: 2rem; margin-right: 2rem; font-size: 15px;
-                            font-weight: 400;">
-                            <ul class="ci_list">
+                            <ul class="list-group my-3 release_list">
+                                {% for release in page.supported_releases %}
+                                <li class="list-group-item version_list">
+                                    <a title="{{ release.version }}" href="{{ release.url }}" target="_blank" rel="nofollow">{{ release.version }}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+
+                            {% if page.project_ci %}
+                            <div class="project_detail_title">
+                                <h5 class="font-weight-bold">Project AArch64 CI Status</h5>
+                            </div>
+                            <ul class="list-group my-3 ci_list">
                                 {% for CI in page.project_ci %}
-                                    <li class="ci_items" style="text-decoration: none;">
-                                        <div style="white-space: nowrap;">
-                                            <a title="{{ CI.title }}" href="{{ CI.url }}" target="_blank" rel="nofollow" style="font-size: 1.5rem;">{{ CI.title }}</a>
-                                        </div>
-                                        <div class="ci_status_img">
-                                            <img src="{{ CI.status | prepend: site.baseurl }}" alt="{{ CI.title }}" style="display: inline;"/>
-                                        </div>
-                                    </li>
-                                    {% endfor %}
-                                </ul>
-                            </div>
+                                <li class="list-group-item ci_items d-flex align-items-center flex-row justify-content-between" style="text-decoration: none;">
+                                    <div style="white-space: nowrap;">
+                                        <a title="{{ CI.title }}" href="{{ CI.url }}" target="_blank" rel="nofollow" style="font-size: 1.5rem;">{{ CI.title }}</a>
+                                    </div>
+                                    <div class="ci_status_img">
+                                        <img src="{{ CI.status | prepend: site.baseurl }}" alt="{{ CI.title }}" style="display: inline;"/>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+
                             {% if page.user_stories %}
                             <div class="project_detail_title">
-                                <h5>User Stories</h5>
+                                <h5 class="font-weight-bold">User Stories</h5>
                             </div>
-                                <div style="padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 2rem; background: #f2f2f2; margin-left: 2rem; margin-right: 2rem; font-size: 15px;
-                            font-weight: 400; ">
-                            <ul class="story_list">
+                            <ul class="list-group my-3 story_list">
                                 {% for story in page.user_stories %}
-                                    <li class="story_items" style="text-decoration: none;">
+                                    <li class="list-group-item story_items" style="text-decoration: none;">
                                         <div>
-                                            <h6>{{ story.title }}</h6>
+                                            <h6 class="font-weight-bold">{{ story.title }}</h6>
                                         </div>
                                         <div>
                                             <p style="color: black; margin-top: 10px;">{{ story.discription }}</p>
                                             {% if story.language %}
-                                                <a title="{{ story.title }}" href="{{ story.url }}" target="_blank" rel="nofollow" style="font-size: 1.5rem; margin-top: 3px; margin-left: 900px; color: darkblue;">Read More({{story.language}}) ...</a>
+                                                <a class="btn btn-xs btn-secondary" title="{{ story.title }}" href="{{ story.url }}" target="_blank" rel="nofollow">Read More({{story.language}}) ...</a>
                                             {% else %}
-                                                <a title="{{ story.title }}" href="{{ story.url }}" target="_blank" rel="nofollow" style="font-size: 1.5rem; margin-top: 3px; margin-left: 930px; color: darkblue;">Read More ...</a>
+                                                <a class="btn btn-xs btn-secondary" title="{{ story.title }}" href="{{ story.url }}" target="_blank" rel="nofollow" >Read More ...</a>
                                             {% endif %}
                                             </div>
                                     </li>
                                     {% endfor %}
                                 </ul>
-                            </div>
                             {% endif %}
                             {% if page.work_items %}
                             <div class="project_detail_title">
-                                <h5>Work Items</h5>
+                                <h5 class="font-weight-bold">Work Items</h5>
                             </div>
-                            <div style="padding-left: 2rem; background: #d6d6d650; margin-left: 2rem; margin-right: 2rem;"">
-                                <ul class="work_list">
+                                <ul class="list-group my-3 work_list">
                                 {% for work in page.work_items %}
-                                    <li class="version_list" style="text-decoration: none;">
+                                    <li class="list-group-item version_list" style="text-decoration: none;">
                                         <a title="{{ work.title }}" href="{{ work.url }}" target="_blank" rel="nofollow" style="font-size: 1.5rem;">[{{work.status}}] {{ work.title }}</a>
                                     </li>
                                     {% endfor %}
                                 </ul>
-                            </div>
                             {% endif %}
                             {% if page.events %}
                             <div class="project_detail_title">
-                                <h5>News and Events</h5>
+                                <h5 class="font-weight-bold">News and Events</h5>
                             </div>
-                            <div style="padding-left: 2rem; background: #d6d6d650; margin-left: 2rem; margin-right: 2rem;"">
-                                <ul class="event_list">
+                                <ul class="list-group my-3 event_list">
                                     {% for event in page.events %}
-                                    <li class="event_item_list">
+                                    <li class="list-group-item event_item_list">
                                         <a title="{{ event.title }}" href="{{ event.url }}" target="_blank" rel="nofollow">[{{event.type}}] {{ event.title }} ({{event.language}})</a>
                                     </li>
                                     {% endfor %}
                                 </ul>
-                            </div>
                             {% endif %}
                         </article>
                     </div>
