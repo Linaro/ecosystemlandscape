@@ -74,7 +74,7 @@ http2_resources:
     href: /assets/fonts/lato/Lato-regular.woff2
 google_analytics:
   enabled: false
-  code: GTM-TKVP3S4
+  code: GTM-XXXXXX
   cookies:
     necessary:
       - name: cookieControl
