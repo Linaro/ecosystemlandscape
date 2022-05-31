@@ -9,7 +9,7 @@ meta:
 project:
   title: "Kubernetes"
   type: "Go"
-  ci_url: "https://cncf.ci/"
+  ci_url: "https://prow.k8s.io/?job=*arm64*"
   url: "Kubernetes"
   project_official_url: "https://kubernetes.io/"
   logo: "/assets/images/projects/cloud/kubernetes/logo.png"
@@ -37,10 +37,6 @@ project_ci:
     title: "Kubernetes Prow CI"
     status: "/assets/images/projects/common/CI_status.png"
     url: "https://prow.k8s.io/?job=*arm64*"
-  - CI:
-    title: "CNCF.CI"
-    status: "/assets/images/projects/common/CI_status.png"
-    url: "https://cncf.ci/"
 
 events:
   - event:
