@@ -18,7 +18,7 @@ project:
 supported_releases:
   - release:
     version: "v1.5.0"
-    url: "https://openlookeng.io/download.html" 
+    url: "https://openlookeng.io/en/download/" 
 
 ---
 
