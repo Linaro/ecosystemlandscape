@@ -24,6 +24,29 @@
     </div>
     <div class="container">
         <div class="row">
+            <div class="col-12 col-sm-2 text-center bg-green text-white d-flex flex-column justify-content-center align-items-center">
+                <h4 class="">Storage</h4>
+            </div>
+            <div class="col-12 col-sm-10">
+                <div class="row pt-0">
+                    {% for item in site.categories.storage reversed %}
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+                            <a href="{{ item.url }}">
+                                <div class="project_inner">
+                                    <h5 class="font-weight-bold bg-green mb-0 text-white text-center">{{ item.project.title }}</h5>
+                                    <div class="img-wrapper">
+                                        <img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
             <div class="col-12 col-sm-2 text-center bg-green d-flex flex-column justify-content-center align-items-center">
                 <h4 class="">Database</h4>
             </div>
