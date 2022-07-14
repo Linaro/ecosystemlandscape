@@ -18,16 +18,13 @@ project:
 supported_releases:
   - release:
     version: "3.3.0"
-    url: "https://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-3.3.0/hadoop-3.3.0-aarch64.tar.gz"
+    url: "https://archive.apache.org/dist/hadoop/common/hadoop-3.3.0/hadoop-3.3.0-aarch64.tar.gz"
+  - release:
+    version: "3.3.0 - Release Note"
+    url: "https://hadoop.apache.org/docs/r3.3.0"
   - release:
     version: "3.3.1"
     url: "https://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-3.3.1/hadoop-3.3.1-aarch64.tar.gz"
-
-project_ci:
-  - CI:
-    title: "Hadoop Upstream AArch64 CI"
-    status: "/assets/images/projects/common/CI_status.png"
-    url: "https://ci-hadoop.apache.org/view/Hadoop/job/hadoop-qbt-linux-ARM-trunk/"
 
 user_stories:
   - story:
