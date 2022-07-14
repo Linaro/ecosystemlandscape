@@ -1,16 +1,16 @@
 <section class="projects">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-2 text-center bg-purple text-white d-flex flex-column justify-content-center align-items-center">
-                <h4 class="">Big Data</h4>
+            <div class="col-12 col-sm-2 text-center bg-orange text-white d-flex flex-column justify-content-center align-items-center">
+                <h4 class="">Virtualization, Cloud, Cloud Native</h4>
             </div>
             <div class="col-12 col-sm-10">
                 <div class="row pt-0">
-                    {% for item in site.categories.bigdata reversed %}
+                    {% for item in site.categories.cloud reversed %}
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
                             <a href="{{ item.url }}">
                                 <div class="project_inner">
-                                    <h5 class="font-weight-bold bg-purple mb-0 text-white text-center">{{ item.project.title }}</h5>
+                                    <h5 class="font-weight-bold bg-orange mb-0 text-white text-center">{{ item.project.title }}</h5>
                                     <div class="img-wrapper">
                                         <img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
                                     </div>
@@ -47,16 +47,16 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-2 text-center bg-orange text-white d-flex flex-column justify-content-center align-items-center">
-                <h4 class="">Virtualization, Cloud, Cloud Native</h4>
+            <div class="col-12 col-sm-2 text-center bg-blue text-white d-flex flex-column justify-content-center align-items-center">
+                <h4 class="bgbrown">Web</h4>
             </div>
             <div class="col-12 col-sm-10">
                 <div class="row pt-0">
-                    {% for item in site.categories.cloud reversed %}
+                    {% for item in site.categories.web reversed %}
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
                             <a href="{{ item.url }}">
                                 <div class="project_inner">
-                                    <h5 class="font-weight-bold bg-orange mb-0 text-white text-center">{{ item.project.title }}</h5>
+                                    <h5 class="font-weight-bold bg-blue mb-0 text-white text-center">{{ item.project.title }}</h5>
                                     <div class="img-wrapper">
                                         <img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
                                     </div>
@@ -70,16 +70,16 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-2 text-center bg-blue text-white d-flex flex-column justify-content-center align-items-center">
-                <h4 class="bgbrown">Web</h4>
+            <div class="col-12 col-sm-2 text-center bg-purple text-white d-flex flex-column justify-content-center align-items-center">
+                <h4 class="">Big Data</h4>
             </div>
             <div class="col-12 col-sm-10">
                 <div class="row pt-0">
-                    {% for item in site.categories.web reversed %}
+                    {% for item in site.categories.bigdata reversed %}
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
                             <a href="{{ item.url }}">
                                 <div class="project_inner">
-                                    <h5 class="font-weight-bold bg-blue mb-0 text-white text-center">{{ item.project.title }}</h5>
+                                    <h5 class="font-weight-bold bg-purple mb-0 text-white text-center">{{ item.project.title }}</h5>
                                     <div class="img-wrapper">
                                         <img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
                                     </div>
