@@ -18,6 +18,8 @@ flow:
           text: |-
             The Linaro Ecosystem Dashboard has been created to provide a centralized information hub for Arm developers across the world.
 
+            Interested in submitting a project? [Click here](https://github.com/Linaro/ecosystemlandscape#project-details-structure) for guidelines and instructions on how to add a project! 
+
             Click logos to check Arm support details for corresponding project and/or product.
       - format: custom_include
         source: projects_menu.html
