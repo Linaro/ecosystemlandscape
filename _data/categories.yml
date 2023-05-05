@@ -14,3 +14,5 @@
   image: /assets/images/content/DataCenter.jpg
 - name: storage
   image: /assets/images/content/DataCenter.jpg
+- name: os
+  image: /assets/images/content/DataCenter.jpg

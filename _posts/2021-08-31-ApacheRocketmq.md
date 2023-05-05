@@ -17,8 +17,8 @@ project:
 
 supported_releases:
   - release:
-    version: "4.9.4"
-    url: "https://rocketmq.apache.org/release_notes/release-notes-4.9.4/"
+    version: "5.1.0"
+    url: "https://rocketmq.apache.org/release-notes/2023/02/16/5.1.0"
 
 project_ci:
   - CI:

@@ -9,7 +9,7 @@ meta:
 project:
   title: "Apache Flink"
   type: "Java"
-  ci_url: "http://status.openlabtesting.org/project/github.com/apache/flink"
+  ci_url: "https://dev.azure.com/apache-flink/apache-flink/_build?definitionId=2"
   url: "ApacheFlink"
   project_official_url: "https://flink.apache.org/"
   logo: "/assets/images/projects/bigdata/flink/logo.png"
@@ -24,7 +24,7 @@ project_ci:
   - CI:
     title: "Flink Upstream AArch64 CI"
     status: "/assets/images/projects/common/CI_status.png"
-    url: "http://status.openlabtesting.org/project/github.com/apache/flink"
+    url: "https://dev.azure.com/apache-flink/apache-flink/_build?definitionId=2"
 
 work_items:
   - work:
