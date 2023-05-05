@@ -17,17 +17,17 @@ project:
 
 supported_releases:
   - release:
-    version: "v1.20"
-    url: "https://v1-20.docs.kubernetes.io/docs/home"
-  - release:
-    version: "v1.21"
-    url: "https://v1-21.docs.kubernetes.io/docs/home"
-  - release:
     version: "v1.22"
     url: "https://v1-22.docs.kubernetes.io/docs/home"
   - release:
     version: "v1.23"
     url: "https://v1-23.docs.kubernetes.io/docs/home"
+  - release:
+    version: "v1.24"
+    url: "https://v1-24.docs.kubernetes.io/docs/home"
+  - release:
+    version: "v1.25"
+    url: "https://v1-25.docs.kubernetes.io/docs/home"
   - release:
     version: "Latest"
     url: "https://kubernetes.io/docs/home/"

@@ -21,7 +21,7 @@ project:
 supported_releases:
   - release:
     version: "v2.1.0"
-    url: "https://opengauss.org/en/download.html"
+    url: "https://opengauss.org/en/download"
 
 
 ---
