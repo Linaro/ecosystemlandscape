@@ -33,7 +33,7 @@ cd <built web site directory>
 ../check-links.sh
 ```
 
-The built web site directory will be `production.ecosystemdashboard.linaro.org`.
+The built web site directory will be [https://production.ecosystemdashboard.linaro.org](https://production.ecosystemdashboard.linaro.org).
 
 For more information, please see the [build container wiki](https://github.com/linaro-its/jekyll-build-container/wiki) and the [link checker wiki](https://github.com/linaro-its/jekyll-link-checker/wiki).
 
