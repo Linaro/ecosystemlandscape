@@ -16,3 +16,5 @@
   image: /assets/images/content/DataCenter.jpg
 - name: os
   image: /assets/images/content/DataCenter.jpg
+- name: hpc
+  image: /assets/images/content/DataCenter.jpg
