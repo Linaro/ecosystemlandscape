@@ -1,6 +1,6 @@
 # Linaro Arm Ecosystem Landscape Jekyll Site
 
-This is the git repository for the ecosystemlandscape.linaro.org static Jekyll-based website.
+This is the git repository for the [https://ecosystemlandscape.linaro.org](https://ecosystemdashboard.linaro.org/) static Jekyll-based website.
 
 Hosted in this repo are the markdown content files associated with the website. Feel free to [submit a PR](https://github.com/Linaro/ecosystemlandscape/pulls) / [Issue](https://github.com/Linaro/ecosystemlandscape/issues/new) if there is anything you would like to change.
 
@@ -33,7 +33,7 @@ cd <built web site directory>
 ../check-links.sh
 ```
 
-The built web site directory will be `production.ecosystemlandscape.linaro.org`.
+The built web site directory will be [https://production.ecosystemdashboard.linaro.org](https://production.ecosystemdashboard.linaro.org).
 
 For more information, please see the [build container wiki](https://github.com/linaro-its/jekyll-build-container/wiki) and the [link checker wiki](https://github.com/linaro-its/jekyll-link-checker/wiki).
 
