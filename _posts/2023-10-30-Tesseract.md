@@ -42,4 +42,4 @@ work_items:
 
 ---
 
-<p>Apache Hadoop</p>
+<p>Tesseract</p>
