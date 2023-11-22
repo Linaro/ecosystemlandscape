@@ -5,15 +5,15 @@ on:
     branches: [main]
   workflow_dispatch:
 
+# Cancel in-progress jobs or runs for the current workflow
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   process-push:
     runs-on: self-hosted
     steps:
-      - name: Cancel previous runs
-        uses: n1hility/cancel-previous-runs@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Fetch git repository
         uses: actions/checkout@v3
         with:
@@ -60,12 +60,3 @@ jobs:
 
       - name: Invalidate CloudFront cache
         run: /srv/github-action-scripts/invalidate-cloudfront.sh
-
-      - name: Run Pa11y scan
-        uses: benc-uk/workflow-dispatch@v1
-        with:
-          ref: master
-          workflow: CheckSite
-          repo: linaro-its/pa11y-ci-container
-          token: ${{ secrets.BUILD_REPO_TOKEN }}
-          inputs: '{ "uri": "${{ env.SITE_URL }}" }'
