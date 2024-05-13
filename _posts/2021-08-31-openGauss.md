@@ -21,7 +21,19 @@ project:
 supported_releases:
   - release:
     version: "v2.1.0"
-    url: "https://opengauss.org/en/download"
+    url: "https://opengauss.org/en/download/archive/"
+  - release:
+    version: "v3.0.0"
+    url: "https://opengauss.org/en/download/archive/"
+  - release:
+    version: "v5.0.0"
+    url: "https://opengauss.org/en/download/archive/"
+  - release:
+    version: "v5.1.0"
+    url: "https://opengauss.org/en/download/archive/"
+  - release:
+    version: "v6.0.0-RC1"
+    url: "https://opengauss.org/en/download/archive/"
 
 
 ---
