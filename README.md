@@ -1,6 +1,10 @@
-# Linaro Arm Ecosystem Landscape Jekyll Site
+# Linaro Arm Ecosystem Dashboard Jekyll Site
 
-This is the git repository for the [https://ecosystemlandscape.linaro.org](https://ecosystemdashboard.linaro.org/) static Jekyll-based website.
+PLEASE NOTE! This git repository has now been archived. The git repository for https://ecosystemdashboard.linaro.org can now be found at https://github.com/Linaro/ecosystemdashboard-astro
+
+--------------------------------------------------------------------
+
+This is the git repository for the [https://ecosystemdashboard.linaro.org](https://ecosystemdashboard.linaro.org/) static Jekyll-based website.
 
 Hosted in this repo are the markdown content files associated with the website. Feel free to [submit a PR](https://github.com/Linaro/ecosystemlandscape/pulls) / [Issue](https://github.com/Linaro/ecosystemlandscape/issues/new) if there is anything you would like to change.
 
